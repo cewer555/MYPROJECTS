@@ -48,7 +48,7 @@ button{
     transform: scale(1.01);
 }
 .mhd{
-    display:inline-block;
+    display:block;
     font-size:10vw;
     font-size: 50px;
     
