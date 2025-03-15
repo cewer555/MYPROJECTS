@@ -146,7 +146,7 @@ th{
     
 }
 @media (max-width:840px){
-    .mhd{
-        resize: both;
+    .heading{
+        width:auto;
     }
     }
