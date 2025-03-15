@@ -145,8 +145,8 @@ th{
     width:70px;
     
 }
-@media (max-width:840px){
+@media (max-width:492px){
     .mhd{
-        font-size:8vw;
+        font-size:6vw;
     
     }
