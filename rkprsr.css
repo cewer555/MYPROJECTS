@@ -51,7 +51,7 @@ button{
     display:block;
     width:70vw;
     font-size:10vw;
-    font-size: 50px;
+    
     
     color: grey;
 
@@ -146,7 +146,5 @@ th{
     
 }
 @media (max-width:840px){
-    .heading{
-        width:auto;
-    }
+    
     }
