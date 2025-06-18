@@ -1,4 +1,6 @@
-
+html{
+    box-sizing:border-box;
+}
 
 .profile_pic,.leetcode{
     width:170px;
