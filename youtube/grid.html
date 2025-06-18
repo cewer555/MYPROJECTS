@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+            /* div{
+            border:0.3px solid black;
+            column-gap: 20px;
+            row-gap: 20px;
+            height:300px;
+            
+            } */
+            .video-grid{
+                display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+            column-gap:20px;
+            row-gap:40px;
+        border: none;
+        
+        background-color:white
+        
+
+       
+        
+        
+        }
+        
+        .video-info{
+            
+            
+            width: 100%;
+            
+            
+            
+            
+            
+
+        }
+        
+        .video-info-grid{
+            display:grid;
+            grid-template-columns: 50px 1fr;
+            
+            
+        }
+        .channel-profile{
+            
+            
+            width:50px
+           
+            
+            
+        }
+        .profile-pic{
+            width:40px;
+            
+            border-radius:50px;
+        }
+        .thumbnail{
+            width:100%;
+            margin-bottom: 12px;
+            z-index: 0;
+            
+        }
+        .info{
+            margin-top:0px;
+            
+          width:270px;
+          font-size:14px;
+          margin-bottom: 5px;
+          font-weight:500;
+          
+          font-family:Arial;
+          
+        }
+        
+        .author{
+        
+            margin-bottom: 5px;
+            }
+        .header{
+            left:0px;
+            display: flex;
+            height:55px;
+            right:0px;
+            background-color:white;
+            flex-direction: row;
+            justify-content: space-between;
+            position:fixed;
+            z-index: 2;
+            top:0px;
+            
+            margin-bottom: 3px;
+        }
+        .left{
+        
+        
+    
+        width:200px;
+        display:flex;
+        align-items:center;
+        }
+
+        .middle{
+            flex: 1;
+            display:flex;
+            align-items:center;
+
+        margin-left: 70px;
+        margin-right: 35px;
+        
+        max-width:500px;
+
+        }
+
+        .right{
+            display:flex;
+        align-items: center;
+        width:200px;
+        justify-content: space-between;
+        margin-right:20px;
+        flex-shrink:0;
+        
+        }
+         .txt{
+            
+            height: 34px;
+            flex:1;
+            vertical-align:top;
+            width: 0;
+            
+            border:1px solid rgb(192, 168, 168);
+        } 
+       .logo{
+       height:20px; 
+       margin-left:2px;
+       }
+       .ham{
+        height:25px;
+        margin-left: 15px;
+        margin-right: 20px;
+       }
+       .search{
+            width:25px;
+            vertical-align:top;
+
+       }
+        .voice{
+           width:20px;
+           
+
+           
+        }      
+        .sbut{
+            width:60px;
+            padding:5px;
+            height:38px;
+            margin-left:-2;
+            border:none;
+            border:1px solid rgb(192, 168, 168);
+
+        }
+        .vbut{
+            margin-left:10px;
+            border:none;
+            border-radius:40px;
+             padding:7px
+             
+             
+          
+        }
+        .txt::placeholder{
+            font-family:Arial;
+            padding-left:10px;
+            font-size:15px;
+            
+        }
+        .up{
+            height:26px;
+            
+        }
+        .lib{height:26px;
+
+        }
+        .not{height:26px;
+            
+        }
+        .chan{height:26px;
+            
+        }
+        .sidebar{
+            position:fixed;
+            top:54px;
+            left:0px;
+            bottom:0;
+            width:60px;
+            background-color:white;
+            align-items: center;
+        }
+        .sidebar div{
+            display:flex;
+            flex-direction: column;
+            height:500px;
+            justify-content: space-between;
+
+            row-gap: 10px;
+            
+
+        }
+        .sidebar div img{
+
+            height:33px;
+        }
+        .time{
+            position: absolute;
+            bottom:10%;
+            right:4%;
+            background-color:black ;
+            z-index: 1;
+            color:white;
+        }
+        .video-preview .thumbnail{
+            position:relative;
+        }
+        
+        @media (max-width:750px) {
+            
+            
+            
+        }
+    </style>
+</head>
+<body style="padding-top:60px;padding-bottom:1000px; padding-left: 70px; background-color: rgb(243, 243, 243);">
+    <div class="sidebar">
+        <div>
+            <img class="home"src="home.svg">
+        <img class="explore"src="explore.svg">
+       <img class="sub"src="subscriptions.svg">
+       <img class="org"src="originals.svg">
+       <img class="mus"src="youtube-music.svg">
+       <img class="libr"src="library.svg">
+        </div>
+        
+    </div>
+    <div class="header">
+        <div class="left"><img class="ham"src="hamburger-menu.svg"><img class="logo" src="youtube-logo.svg">
+        </div>
+        <div class="middle"><input class="txt"  type="text"  placeholder="Search" ><button class="sbut"><img class="search"src="search.svg"></button>
+            <button class="vbut"><img class="voice"src="voice-search-icon.svg"></button>
+        
+    </div>
+        <div class="right"><img class="up" src="upload.svg"> <img class="lib" src="youtube-apps.svg"> <img class="not"src="notifications.svg"> <img class="chan"src="my-channel.jpeg"></div>
+    </div>
+    
+    <div class ="video-grid">
+        <div class="video-preview">
+            <div >
+                <img class="thumbnail" src="thumbnail-1.webp"
+                ><div class="time">14:20</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-1.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="author">
+                    
+                
+                    Marques Brownlee
+                   
+                </p>
+                <p class="stats">
+                    3.4M views . 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-2.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-2.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    Try Not To Laugh Challenge #9
+                </p>
+                <p class="author">
+                    
+                    Markiplier
+                
+                    
+                </p>
+                <p class="stats">
+                    19M views · 4 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-3.webp"><div class="time">10:10</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-3.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                    
+                </p>
+                <p class="author">
+                    
+                   
+                    Sniper Wolf
+                
+               
+                </p>
+                <p class="stats">
+                    12M views · 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-4.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-4.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                </p>
+                <p class="author">
+                    
+                    Veritasium
+                    
+                
+                
+                </p>
+                <p class="stats">
+                    10M views · 2 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-5.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-5.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    
+Kadane's Algorithm to Maximum Sum Subarray Problem
+
+
+
+
+                </p>
+                <p class="author">
+                    
+                
+                    CS Dojo
+                   
+                </p>
+                <p class="stats">
+                    519K views · 5 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-6.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-6.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                   
+Anything You Can Fit In The Circle I’ll Pay For
+
+
+
+
+                </p>
+                <p class="author">
+                    
+                    MrBeast
+                
+                    
+                </p>
+                <p class="stats">
+                    141M views · 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-7.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-7.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    
+Why Planes Don't Fly Over Tibet
+
+
+
+
+                    
+                </p>
+                <p class="author">
+                    
+                   
+                    RealLifeLore
+                
+               
+                </p>
+                <p class="stats">
+                    6.6M views · 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-8.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-8.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    
+Inside The World's Biggest Passenger Plane
+
+
+
+
+                </p>
+                <p class="author">
+                    
+                    Tech Vision
+                    
+                
+                
+                </p>
+                <p class="stats">
+                    3.7M views · 10 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-9.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-9.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    
+The SECRET to Super Human STRENGTH
+
+
+
+
+                </p>
+                <p class="author">
+                    
+                
+                    ThenX
+                   
+                </p>
+                <p class="stats">
+                    20M views · 3 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-10.webp">
+            </div>
+            <div class="video-info-grid"> 
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-10.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    
+How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+
+
+
+
+                </p>
+                <p class="author">
+                    
+                    Business Insider
+                
+                    
+                </p>
+                <p class="stats">
+                    14M views · 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-11.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-11.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    
+Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+
+
+
+
+                    
+                </p>
+                <p class="author">
+                    
+                   
+                    Destination Tips
+                
+               
+                </p>
+                <p class="stats">
+                    3M views · 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="thumbnail-12.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-profile">
+                    <img class="profile-pic" src="channel-12.jpeg">
+                </div>
+                <div class="video-info">
+                   <p class="info">
+                    
+What would happen if you didn’t drink water? - Mia Nacamulli
+
+
+
+
+                </p>
+                <p class="author">
+                    
+                    TED-Ed
+                    
+                
+                
+                </p>
+                <p class="stats">
+                    12M views · 5 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+    
+      
+    
+
+    </div>
+</body>
+</html>

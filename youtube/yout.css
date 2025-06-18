@@ -1,0 +1,71 @@
+img{
+    
+    
+    
+    
+    
+    display: inline-block;
+    margin-right:5px;
+}
+
+.author{
+    margin-bottom:1px;
+}
+.stats{
+    margin-top: 1px;
+}
+p{
+    width:280px;
+    
+}
+.txt{
+width:300px;
+display:block;
+
+
+}
+
+button{
+    background-color: rgb(62, 139, 255);
+    color: aliceblue;
+    border-radius: 30px;
+    padding:8px;
+    border:none;
+    
+    width:80px;
+    vertical-align: middle;
+
+
+}
+.sundar{
+    margin-left: 80px;
+    display:inline-block;
+    margin-top:20px
+    
+}
+.mark{
+   
+    margin-top:20px;
+    display:inline-block;
+    vertical-align:top;
+    margin-left: 5px;
+}
+.videop{
+    display:inline-block;
+    vertical-align:bottom;
+}
+.mark{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+}
+.chan1{
+    display: inline-block;
+}
+
+.sniper{
+    
+    vertical-align: top;
+     display:inline-block;
+     
+}
