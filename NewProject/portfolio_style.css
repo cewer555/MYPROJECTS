@@ -8,6 +8,9 @@ html{
     margin: auto;
     
 }
+.main,.placeholeder{
+display:inline-block;
+}
 .theme{
     display:flex;
     flex-direction: row;
