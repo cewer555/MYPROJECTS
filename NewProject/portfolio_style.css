@@ -40,7 +40,8 @@ background-color:green;
 }
 .leetcode{
     margin-top:50px;
-    border:0px;
+    border:2px solid white;
+    
 }
 p{
     font-size:20px;
@@ -211,6 +212,7 @@ body{
     }
    .teet{
     padding:0;
+    margin:auto;
    }
    .full{
     font-size: 20px;
@@ -249,7 +251,12 @@ body{
         height:2px;
     }
     .leet{
-        column-gap:5px;
+        display:flex;
+        flex-direction:column;
+        
+    }
+    .leetcode{
+        margin: auto;
     }
     
 }
