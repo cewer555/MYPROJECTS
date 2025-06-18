@@ -198,8 +198,8 @@ body{
 
 }
 @media (max-width:500px){
-    body{
-        padding-right:3px;
+    .main,.placeholder{
+        margin-right:5px;
     }
     .name,.name2{
         font-size: 320%;
