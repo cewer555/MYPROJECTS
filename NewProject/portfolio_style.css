@@ -236,5 +236,8 @@ body{
         width:60px;
         height:2px;
     }
+    body{
+        padding-right:2px;
+    }
     
 }
