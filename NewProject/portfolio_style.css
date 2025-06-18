@@ -180,7 +180,7 @@ h1,h2,h3{
     padding-top: 20px;
     padding-left: 0px;
 /*     padding-right:50px; */
-    background: black;
+    background: white;
     flex-direction: column;
     /* align-items: center; */
     transition:opacity 0.8s;
