@@ -234,19 +234,22 @@ body{
         height:3px;
     }
     .pp1{
-        width:50px;
+        width:15px;
         height:2px;
     }
     .profile_two{
         width:400px;
     }
     .pp2{
-        width:50px;
+        width:10px;
         height:2px;
     }
     .pp3{
-        width:60px;
+        width:10px;
         height:2px;
+    }
+    .leet{
+        column-gap:5px;
     }
     
 }
