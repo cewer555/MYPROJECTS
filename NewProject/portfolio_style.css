@@ -192,6 +192,7 @@ h1,h2,h3{
     background-color: black;
     padding-left: 0px;
     min-width: none;
+    padding-right: 50px;
 
 
 }
@@ -213,7 +214,7 @@ body{
     }
     .leetcode{
         width:100px;
-        
+        height:100px;
     }
     .progbar{
         width:150px;
