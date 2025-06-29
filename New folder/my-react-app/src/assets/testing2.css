@@ -1,0 +1,46 @@
+
+
+#root{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  width:100%;
+  height:100%;
+  background-color: grey;
+
+}
+.nav-bar
+{
+    background-color: rgb(20,20,20);
+    color:aqua;
+    display:flex;
+    flex-direction:row;
+    column-gap: 10px;
+    padding-left: 15px;    
+}
+.reactfacts{
+   
+    color:white;
+    background-color: rgb(50,50,50);
+    padding:20px 0px 200px 50px;
+    background-image: url(C:\Users\moham\Desktop\website\my-react-app\src\assets\react.svg);
+    
+    background-repeat: no-repeat;
+    background-position:72rem;
+    background-size: 450px;
+    background-attachment: fixed;
+    
+}
+li{
+    margin-bottom:20px ;
+}
+li::marker{
+    color:aqua;
+    font-size: 30px;
+}
+body{
+    background-color: rgb(50,50,50);
+
+    margin:0px;
+}
